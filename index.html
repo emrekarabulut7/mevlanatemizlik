@@ -1,0 +1,809 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mevlana Halı Yıkama ve Temizlik Hizmetleri</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <link rel="stylesheet" href="css/testimonials.css">
+    <link rel="stylesheet" href="css/footer.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <!-- Logo -->
+            <a class="navbar-brand" href="#">
+                <div class="brand-content">
+                    <div class="brand-icons">
+                        <i class="bi bi-droplet-fill"></i>
+                        <i class="bi bi-truck"></i>
+                    </div>
+                    <div class="brand-text">
+                        <span class="brand-title">Mevlana</span>
+                        <span class="brand-subtitle">
+                            <i class="bi bi-stars"></i>
+                            Temizlik & Nakliyat
+                        </span>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Navbar Menü -->
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav align-items-center">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#anasayfa">
+                            <i class="bi bi-house"></i>
+                            Ana Sayfa
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown">
+                            <i class="bi bi-grid"></i>
+                            Hizmetlerimiz
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#haliYikama">
+                                <i class="bi bi-droplet"></i> Halı Yıkama
+                            </a></li>
+                            <li><a class="dropdown-item" href="#koltukYikama">
+                                <i class="bi bi-shop"></i> Koltuk Yıkama
+                            </a></li>
+                            <li><a class="dropdown-item" href="#yorganYikama">
+                                <i class="bi bi-cloud-fill"></i> Yorgan Yıkama
+                            </a></li>
+                            <li><a class="dropdown-item" href="#kilimYikama">
+                                <i class="bi bi-brush-fill"></i> Kilim Yıkama
+                            </a></li>
+                            <li><a class="dropdown-item" href="#battaniyeYikama">
+                                <i class="bi bi-moon-stars-fill"></i> Battaniye Yıkama
+                            </a></li>
+                            <li><a class="dropdown-item" href="#ofisTemizligi">
+                                <i class="bi bi-building"></i> Ofis Temizliği
+                            </a></li>
+                            <li><a class="dropdown-item" href="#apartmanTemizligi">
+                                <i class="bi bi-houses-fill"></i> Apartman Temizliği
+                            </a></li>
+                            <li><a class="dropdown-item" href="#evdenEveNakliyat">
+                                <i class="bi bi-truck"></i> Evden Eve Nakliyat
+                            </a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#hakkimizda">
+                            <i class="bi bi-info-circle"></i>
+                            Hakkımızda
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#iletisim">
+                            <i class="bi bi-chat-dots"></i>
+                            İletişim
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="tel:+905555555555" class="btn btn-light">
+                            <i class="bi bi-telephone-fill"></i>
+                            <span class="phone-text">
+                                <span class="phone-label">Hemen Ara</span>
+                                <span class="phone-number">0555 555 55 55</span>
+                            </span>
+                        </a>
+                    </li>
+                    <!-- Mobil için Tema Değiştirici -->
+                    <li class="nav-item d-lg-none mt-3">
+                        <div class="theme-switcher-mobile">
+                            <button class="theme-btn light-mode active" title="Aydınlık Mod">
+                                <i class="bi bi-sun-fill"></i>
+                            </button>
+                            <button class="theme-btn dark-mode" title="Karanlık Mod">
+                                <i class="bi bi-moon-stars-fill"></i>
+                            </button>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Sağ Taraf (Tema Değiştirici ve Hamburger) -->
+            <div class="navbar-right d-flex align-items-center">
+                <!-- Desktop Tema Değiştirici -->
+                <div class="theme-switcher d-none d-lg-flex">
+                    <button class="theme-btn light-mode" onclick="setTheme('light')">
+                        <i class="bi bi-sun-fill"></i>
+                    </button>
+                    <button class="theme-btn dark-mode" onclick="setTheme('dark')">
+                        <i class="bi bi-moon-stars-fill"></i>
+                    </button>
+                </div>
+                
+                <!-- Hamburger Menü -->
+                <button class="navbar-toggler ms-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <i class="bi bi-list"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="anasayfa" class="hero">
+        <div class="hero-bg"></div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badges">
+                    <span class="badge">
+                        <i class="bi bi-shield-check"></i>
+                        %100 Müşteri Memnuniyeti
+                    </span>
+                    <span class="badge">
+                        <i class="bi bi-clock"></i>
+                        7/24 Hizmet
+                    </span>
+                </div>
+                
+                <h1 class="hero-title">
+                    Profesyonel <span class="gradient-text">Temizlik</span> ve 
+                    <span class="gradient-text">Nakliyat</span> Hizmetleri
+                </h1>
+                
+                <p class="hero-description">
+                    Ev ve iş yerleriniz için profesyonel temizlik ve nakliyat hizmetleri sunuyoruz. 
+                    Deneyimli ekibimiz ve modern ekipmanlarımızla yanınızdayız.
+                </p>
+
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">1500+</span>
+                        <span class="stat-text">Mutlu Müşteri</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">5+</span>
+                        <span class="stat-text">Yıllık Deneyim</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">100%</span>
+                        <span class="stat-text">Müşteri Memnuniyeti</span>
+                    </div>
+                </div>
+
+                <div class="hero-cta">
+                    <a href="tel:+905555555555" class="btn btn-primary">
+                        <i class="bi bi-telephone-fill"></i>
+                        Hemen Ara
+                    </a>
+                    <a href="#hizmetler" class="btn btn-outline">
+                        <i class="bi bi-arrow-down-circle"></i>
+                        Hizmetleri İncele
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hero section ile Hizmetler section'ı arasına ekleyin -->
+    <div class="marquee-section">
+        <div class="marquee-content">
+            <div class="marquee-items">
+                <div class="marquee-item">
+                    <i class="bi bi-star-fill"></i>
+                    Profesyonel Hizmet
+                </div>
+                <div class="marquee-item">
+                    <i class="bi bi-shield-check"></i>
+                    %100 Müşteri Memnuniyeti
+                </div>
+                <div class="marquee-item">
+                    <i class="bi bi-clock"></i>
+                    7/24 Hizmet
+                </div>
+                <div class="marquee-item">
+                    <i class="bi bi-trophy"></i>
+                    Kaliteli Hizmet
+                </div>
+            </div>
+            <!-- Animasyon için içeriği tekrar ediyoruz -->
+            <div class="marquee-items">
+                <div class="marquee-item">
+                    <i class="bi bi-star-fill"></i>
+                    Profesyonel Hizmet
+                </div>
+                <div class="marquee-item">
+                    <i class="bi bi-shield-check"></i>
+                    %100 Müşteri Memnuniyeti
+                </div>
+                <div class="marquee-item">
+                    <i class="bi bi-clock"></i>
+                    7/24 Hizmet
+                </div>
+                <div class="marquee-item">
+                    <i class="bi bi-trophy"></i>
+                    Kaliteli Hizmet
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hizmetler -->
+    <section id="hizmetler">
+        <div class="container">
+            <div class="section-title">
+                <span class="subtitle">HİZMETLERİMİZ</span>
+                <h2>Size Nasıl Yardımcı Olabiliriz?</h2>
+            </div>
+            
+            <div class="services-grid">
+                <!-- Halı Yıkama -->
+                <div id="haliYikama" class="service-box">
+                    <div class="service-icon">
+                        <i class="bi bi-droplet-fill"></i>
+                    </div>
+                    <div class="service-content">
+                        <h3>Halı Yıkama</h3>
+                        <p>Profesyonel ekipman ve özel şampuanlarla derinlemesine temizlik</p>
+                        <ul class="service-features">
+                            <li><i class="bi bi-check2-circle"></i> Leke çıkarma işlemi</li>
+                            <li><i class="bi bi-check2-circle"></i> Hijyenik kurutma</li>
+                            <li><i class="bi bi-check2-circle"></i> Ücretsiz servis</li>
+                        </ul>
+                        <a href="#" class="service-btn">
+                            Detaylı Bilgi
+                            <i class="bi bi-arrow-right"></i>
+                        </a>
+                    </div>
+                    <div class="service-shape"></div>
+                </div>
+
+                <!-- Koltuk Yıkama -->
+                <div id="koltukYikama" class="service-box">
+                    <div class="service-icon">
+                        <i class="bi bi-shop"></i>
+                    </div>
+                    <div class="service-content">
+                        <h3>Koltuk Yıkama</h3>
+                        <p>Özel temizleme sistemleriyle koltuk ve mobilya temizliği</p>
+                        <ul class="service-features">
+                            <li><i class="bi bi-check2-circle"></i> Derinlemesine temizlik</li>
+                            <li><i class="bi bi-check2-circle"></i> Leke çıkarma</li>
+                            <li><i class="bi bi-check2-circle"></i> Dezenfeksiyon</li>
+                        </ul>
+                        <a href="#" class="service-btn">
+                            Detaylı Bilgi
+                            <i class="bi bi-arrow-right"></i>
+                        </a>
+                    </div>
+                    <div class="service-shape"></div>
+                </div>
+
+                <!-- Yorgan Yıkama -->
+                <div id="yorganYikama" class="service-box">
+                    <div class="service-icon">
+                        <i class="bi bi-cloud-fill"></i>
+                    </div>
+                    <div class="service-content">
+                        <h3>Yorgan Yıkama</h3>
+                        <p>Hijyenik ortamda yorgan temizliği ve bakımı</p>
+                        <ul class="service-features">
+                            <li><i class="bi bi-check2-circle"></i> Özel yıkama</li>
+                            <li><i class="bi bi-check2-circle"></i> Kurutma hizmeti</li>
+                            <li><i class="bi bi-check2-circle"></i> Paketleme</li>
+                        </ul>
+                        <a href="#" class="service-btn">
+                            Detaylı Bilgi
+                            <i class="bi bi-arrow-right"></i>
+                        </a>
+                    </div>
+                    <div class="service-shape"></div>
+                </div>
+
+                <!-- Kilim Yıkama -->
+                <div id="kilimYikama" class="service-box">
+                    <div class="service-icon">
+                        <i class="bi bi-brush-fill"></i>
+                    </div>
+                    <div class="service-content">
+                        <h3>Kilim Yıkama</h3>
+                        <p>El dokuması ve makine kilimlerine özel bakım</p>
+                        <ul class="service-features">
+                            <li><i class="bi bi-check2-circle"></i> Hassas temizlik</li>
+                            <li><i class="bi bi-check2-circle"></i> Renk koruma</li>
+                            <li><i class="bi bi-check2-circle"></i> Özel kurutma</li>
+                        </ul>
+                        <a href="#" class="service-btn">
+                            Detaylı Bilgi
+                            <i class="bi bi-arrow-right"></i>
+                        </a>
+                    </div>
+                    <div class="service-shape"></div>
+                </div>
+
+                <!-- Battaniye Yıkama -->
+                <div id="battaniyeYikama" class="service-box">
+                    <div class="service-icon">
+                        <i class="bi bi-moon-stars-fill"></i>
+                    </div>
+                    <div class="service-content">
+                        <h3>Battaniye Yıkama</h3>
+                        <p>Her türlü battaniye için profesyonel temizlik</p>
+                        <ul class="service-features">
+                            <li><i class="bi bi-check2-circle"></i> Yumuşatma işlemi</li>
+                            <li><i class="bi bi-check2-circle"></i> Hijyenik yıkama</li>
+                            <li><i class="bi bi-check2-circle"></i> Vakumlu paketleme</li>
+                        </ul>
+                        <a href="#" class="service-btn">
+                            Detaylı Bilgi
+                            <i class="bi bi-arrow-right"></i>
+                        </a>
+                    </div>
+                    <div class="service-shape"></div>
+                </div>
+
+                <!-- Ofis Temizliği -->
+                <div id="ofisTemizligi" class="service-box">
+                    <div class="service-icon">
+                        <i class="bi bi-building"></i>
+                    </div>
+                    <div class="service-content">
+                        <h3>Ofis Temizliği</h3>
+                        <p>İş yerleriniz için detaylı temizlik hizmeti</p>
+                        <ul class="service-features">
+                            <li><i class="bi bi-check2-circle"></i> Genel temizlik</li>
+                            <li><i class="bi bi-check2-circle"></i> Cam temizliği</li>
+                            <li><i class="bi bi-check2-circle"></i> Zemin bakımı</li>
+                        </ul>
+                        <a href="#" class="service-btn">
+                            Detaylı Bilgi
+                            <i class="bi bi-arrow-right"></i>
+                        </a>
+                    </div>
+                    <div class="service-shape"></div>
+                </div>
+
+                <!-- Apartman Temizliği -->
+                <div id="apartmanTemizligi" class="service-box">
+                    <div class="service-icon">
+                        <i class="bi bi-houses-fill"></i>
+                    </div>
+                    <div class="service-content">
+                        <h3>Apartman Temizliği</h3>
+                        <p>Ortak alanlar için periyodik temizlik hizmeti</p>
+                        <ul class="service-features">
+                            <li><i class="bi bi-check2-circle"></i> Merdiven temizliği</li>
+                            <li><i class="bi bi-check2-circle"></i> Giriş temizliği</li>
+                            <li><i class="bi bi-check2-circle"></i> Çöp toplama</li>
+                        </ul>
+                        <a href="#" class="service-btn">
+                            Detaylı Bilgi
+                            <i class="bi bi-arrow-right"></i>
+                        </a>
+                    </div>
+                    <div class="service-shape"></div>
+                </div>
+
+                <!-- Evden Eve Nakliyat -->
+                <div id="evdenEveNakliyat" class="service-box">
+                    <div class="service-icon">
+                        <i class="bi bi-truck"></i>
+                    </div>
+                    <div class="service-content">
+                        <h3>Evden Eve Nakliyat</h3>
+                        <p>Güvenli ve profesyonel taşımacılık hizmeti</p>
+                        <ul class="service-features">
+                            <li><i class="bi bi-check2-circle"></i> Profesyonel paketleme</li>
+                            <li><i class="bi bi-check2-circle"></i> Sigortalı taşımacılık</li>
+                            <li><i class="bi bi-check2-circle"></i> Montaj demontaj hizmeti</li>
+                            <li><i class="bi bi-check2-circle"></i> Asansörlü taşıma</li>
+                        </ul>
+                        <a href="#" class="service-btn">
+                            Detaylı Bilgi
+                            <i class="bi bi-arrow-right"></i>
+                        </a>
+                    </div>
+                    <div class="service-shape"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hakkımızda Section -->
+    <section id="hakkimizda" class="py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <div class="about-content">
+                        <div class="section-badge">2014'den beri hizmetinizdeyiz</div>
+                        <h2 class="section-title mb-4">Profesyonel Temizlik ve Nakliyat Hizmetlerinde Güvenilir Çözüm Ortağınız</h2>
+                        <p class="section-description">Mevlana Halı Yıkama olarak, ev ve işyerlerinizin tüm temizlik ve nakliyat ihtiyaçları için profesyonel çözümler sunuyoruz. Deneyimli ekibimiz ve modern ekipmanlarımızla kaliteli hizmet anlayışımızı sürdürüyoruz.</p>
+                        
+                        <div class="features-grid">
+                            <div class="feature-item">
+                                <div class="feature-icon">
+                                    <i class="bi bi-shield-check"></i>
+                                </div>
+                                <div class="feature-content">
+                                    <h4>Güvenilir Hizmet</h4>
+                                    <p>%100 Müşteri Memnuniyeti</p>
+                                </div>
+                            </div>
+                            <div class="feature-item">
+                                <div class="feature-icon">
+                                    <i class="bi bi-people"></i>
+                                </div>
+                                <div class="feature-content">
+                                    <h4>Uzman Ekip</h4>
+                                    <p>Profesyonel Kadro</p>
+                                </div>
+                            </div>
+                            <div class="feature-item">
+                                <div class="feature-icon">
+                                    <i class="bi bi-gear"></i>
+                                </div>
+                                <div class="feature-content">
+                                    <h4>Modern Ekipman</h4>
+                                    <p>Son Teknoloji Cihazlar</p>
+                                </div>
+                            </div>
+                            <div class="feature-item">
+                                <div class="feature-icon">
+                                    <i class="bi bi-clock"></i>
+                                </div>
+                                <div class="feature-content">
+                                    <h4>Hızlı Hizmet</h4>
+                                    <p>Zamanında Teslimat</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="stats-container">
+                            <div class="stat-item">
+                                <span class="stat-number">10+</span>
+                                <span class="stat-text">Yıllık Tecrübe</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">5000+</span>
+                                <span class="stat-text">Mutlu Müşteri</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">3</span>
+                                <span class="stat-text">Hizmet Kategorisi</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6" data-aos="fade-left">
+                    <div class="about-image">
+                        <img src="asset/img/özel.webp" alt="Hakkımızda" class="img-fluid main-image">
+                        <div class="experience-badge">
+                            <span class="number">10</span>
+                            <span class="text">Yıllık<br>Tecrübe</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Müşteri Yorumları Section -->
+    <section id="yorumlar" class="testimonials py-5">
+        <div class="container">
+            <div class="section-title text-center mb-5">
+                <span class="subtitle">REFERANSLARIMIZ</span>
+                <h2>Müşterilerimiz Ne Diyor?</h2>
+            </div>
+            
+            <div class="testimonials-slider">
+                <!-- Yorum 1 -->
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="quote-icon">
+                            <i class="bi bi-quote"></i>
+                        </div>
+                        <p class="testimonial-text">
+                            "Çok profesyonel bir hizmet aldık. Halılarımız tertemiz oldu, personel çok ilgiliydi. Kesinlikle tavsiye ediyorum."
+                        </p>
+                        <div class="testimonial-rating">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </div>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-info">
+                            <h4>Ayşe Yılmaz</h4>
+                            <span>Kahramanmaraş</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Yorum 2 -->
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="quote-icon">
+                            <i class="bi bi-quote"></i>
+                        </div>
+                        <p class="testimonial-text">
+                            "Ev taşıma sürecinde çok yardımcı oldular. Eşyalarımız özenle taşındı, hiçbir sorun yaşamadık."
+                        </p>
+                        <div class="testimonial-rating">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </div>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-info">
+                            <h4>Mehmet Demir</h4>
+                            <span>Kahramanmaraş</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Yorum 3 -->
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="quote-icon">
+                            <i class="bi bi-quote"></i>
+                        </div>
+                        <p class="testimonial-text">
+                            "Ev temizliği için tercih ettik, çok memnun kaldık. Detaylı ve özenli bir temizlik yapıldı."
+                        </p>
+                        <div class="testimonial-rating">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </div>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-info">
+                            <h4>Ali Kaya</h4>
+                            <span>Kahramanmaraş</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- İletişim -->
+    <section id="iletisim">
+        <div class="container">
+            <h2>Bizimle İletişime Geçin</h2>
+            <div class="contact-wrapper">
+                <div class="contact-form-container">
+                    <div class="form-header">
+                        <span class="form-badge">7/24 Hizmetinizdeyiz</span>
+                        <h3>Mesaj Gönderin</h3>
+                        <p>Size en kısa sürede dönüş yapacağız</p>
+                    </div>
+                    <form>
+                        <div class="form-group name">
+                            <input type="text" class="form-control" placeholder="Adınız Soyadınız">
+                        </div>
+                        <div class="form-group email">
+                            <input type="email" class="form-control" placeholder="E-posta Adresiniz">
+                        </div>
+                        <div class="form-group phone">
+                            <input type="tel" class="form-control" placeholder="Telefon Numaranız">
+                        </div>
+                        <div class="form-group message">
+                            <textarea class="form-control" placeholder="Mesajınız"></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">
+                            <i class="bi bi-send"></i>
+                            Mesajı Gönder
+                        </button>
+                    </form>
+                </div>
+                
+                <div class="contact-info-container">
+                    <div class="map-container">
+                        <div class="map-content">
+                            <iframe 
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d25183.17811139011!2d36.57974384450734!3d37.93396771090135!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x152dff19ed11f30f%3A0x5e3f1d484f470be7!2sTekir%2C%20Kahramanmara%C5%9F%20Merkez%2FKahramanmara%C5%9F!5e0!3m2!1str!2str!4v1709913177010!5m2!1str!2str" 
+                                width="100%" 
+                                height="100%" 
+                                style="border:0;" 
+                                allowfullscreen="" 
+                                loading="lazy">
+                            </iframe>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-info">
+                        <div class="info-header">
+                            <h3>İletişim Bilgileri</h3>
+                            <p>Bize aşağıdaki kanallardan ulaşabilirsiniz</p>
+                        </div>
+                        
+                        <div class="info-items">
+                            <div class="info-item">
+                                <i class="bi bi-geo-alt-fill"></i>
+                                <div class="info-content">
+                                    <h4>Adres</h4>
+                                    <p>Örnek Mahallesi, Örnek Sokak No:123</p>
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <i class="bi bi-telephone-fill"></i>
+                                <div class="info-content">
+                                    <h4>Telefon</h4>
+                                    <p>0555 555 55 55</p>
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <i class="bi bi-envelope-fill"></i>
+                                <div class="info-content">
+                                    <h4>E-posta</h4>
+                                    <p>info@example.com</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="social-media">
+                            <h4>Sosyal Medya</h4>
+                            <div class="social-links">
+                                <a href="#" class="social-link facebook">
+                                    <i class="bi bi-facebook"></i>
+                                </a>
+                                <a href="#" class="social-link instagram">
+                                    <i class="bi bi-instagram"></i>
+                                </a>
+                                <a href="#" class="social-link twitter">
+                                    <i class="bi bi-twitter"></i>
+                                </a>
+                                <a href="#" class="social-link whatsapp">
+                                    <i class="bi bi-whatsapp"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <!-- Logo ve Hakkında -->
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <i class="bi bi-droplet-fill"></i>
+                        <div class="brand-text">
+                            <span class="brand-title">Mevlana</span>
+                            <span class="brand-subtitle">Halı Yıkama</span>
+                        </div>
+                    </div>
+                    <p class="footer-about">
+                        2014'den beri Kahramanmaraş'ta profesyonel temizlik ve nakliyat hizmetleri sunuyoruz.
+                    </p>
+                </div>
+
+                <!-- Hızlı Linkler -->
+                <div class="footer-links">
+                    <h4>Hızlı Linkler</h4>
+                    <ul>
+                        <li><a href="#anasayfa">Ana Sayfa</a></li>
+                        <li><a href="#hizmetler">Hizmetlerimiz</a></li>
+                        <li><a href="#hakkimizda">Hakkımızda</a></li>
+                        <li><a href="#iletisim">İletişim</a></li>
+                    </ul>
+                </div>
+
+                <!-- Hizmetler -->
+                <div class="footer-services">
+                    <h4>Hizmetlerimiz</h4>
+                    <ul>
+                        <li><a href="#haliYikama">Halı Yıkama</a></li>
+                        <li><a href="#koltukYikama">Koltuk Yıkama</a></li>
+                        <li><a href="#yorganYikama">Yorgan Yıkama</a></li>
+                        <li><a href="#kilimYikama">Kilim Yıkama</a></li>
+                        <li><a href="#battaniyeYikama">Battaniye Yıkama</a></li>
+                        <li><a href="#ofisTemizligi">Ofis Temizliği</a></li>
+                        <li><a href="#apartmanTemizligi">Apartman Temizliği</a></li>
+                        <li><a href="#evdenEveNakliyat">Evden Eve Nakliyat</a></li>
+                    </ul>
+                </div>
+
+                <!-- İletişim -->
+                <div class="footer-contact">
+                    <h4>İletişim</h4>
+                    <ul>
+                        <li>
+                            <i class="bi bi-geo-alt"></i>
+                            <span>Örnek Mah. Örnek Sok. No:123 Kahramanmaraş</span>
+                        </li>
+                        <li>
+                            <i class="bi bi-telephone"></i>
+                            <a href="tel:+905555555555">0555 555 55 55</a>
+                        </li>
+                        <li>
+                            <i class="bi bi-envelope"></i>
+                            <a href="mailto:info@example.com">info@example.com</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Alt Footer -->
+            <div class="footer-bottom">
+                <div class="footer-info">
+                    <div class="copyright">
+                        © 2024 Mevlana Halı Yıkama. Tüm hakları saklıdır.
+                    </div>
+                    <div class="developer">
+                        Developed by <a href="https://github.com/emrekarabulut" target="_blank">Emre Karabulut</a>
+                    </div>
+                </div>
+                <div class="footer-social">
+                    <a href="#" class="social-link facebook"><i class="bi bi-facebook"></i></a>
+                    <a href="#" class="social-link instagram"><i class="bi bi-instagram"></i></a>
+                    <a href="#" class="social-link twitter"><i class="bi bi-twitter"></i></a>
+                    <a href="#" class="social-link whatsapp"><i class="bi bi-whatsapp"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery (Bootstrap JS için gerekli) -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+    </script>
+
+    <!-- Sabit İkonlar -->
+    <div class="fixed-contact-buttons">
+        <!-- Telefon 1 -->
+        <a href="tel:+905555555551" class="contact-button phone-button" title="Halı Yıkama">
+            <i class="bi bi-droplet-fill"></i>
+            <span class="button-text">0555 555 55 51</span>
+        </a>
+        
+        <!-- Telefon 2 -->
+        <a href="tel:+905555555552" class="contact-button phone-button2" title="Ev Temizliği">
+            <i class="bi bi-house-heart"></i>
+            <span class="button-text">0555 555 55 52</span>
+        </a>
+        
+        <!-- Telefon 3 -->
+        <a href="tel:+905555555553" class="contact-button phone-button3" title="Nakliyat">
+            <i class="bi bi-truck"></i>
+            <span class="button-text">0555 555 55 53</span>
+        </a>
+        
+        <!-- Telefon 4 -->
+        <a href="tel:+905555555554" class="contact-button phone-button4" title="Müşteri Hizmetleri">
+            <i class="bi bi-headset"></i>
+            <span class="button-text">0555 555 55 54</span>
+        </a>
+        
+        <!-- WhatsApp -->
+        <a href="https://wa.me/905555555555" target="_blank" class="contact-button whatsapp-button" title="WhatsApp'tan Yazın">
+            <i class="bi bi-whatsapp"></i>
+            <span class="button-text">WhatsApp</span>
+        </a>
+    </div>
+</body>
+</html> 
